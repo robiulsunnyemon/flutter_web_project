@@ -14,7 +14,7 @@ class project_heading_text_widget extends StatelessWidget {
       style: TextStyle(
         fontWeight: FontWeight.bold,
         color: app_colors.main_color,
-        fontSize: height/48.2
+        fontSize: width/93.6
       ),
     );
   }

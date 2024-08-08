@@ -11,7 +11,7 @@ class middle_text_widget extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        fontSize: height/53.55,
+        fontSize: width/104,
         fontWeight: FontWeight.w800,
         color: Colors.white
       ),

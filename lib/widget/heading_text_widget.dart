@@ -12,7 +12,7 @@ class heading_text_widget extends StatelessWidget {
     final width=MediaQuery.sizeOf(context).width;
     return Text(text,style:TextStyle(
         color: app_colors.main_color,
-        fontSize: height/24.1,
+        fontSize: width/46.8,
         fontWeight: FontWeight.bold
     ),);
   }

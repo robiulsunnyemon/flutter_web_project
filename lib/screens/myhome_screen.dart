@@ -292,121 +292,235 @@ class _MyhomeScreenState extends State<MyhomeScreen> {
               // ),
 
               //contact section start
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          heading_text_widget(text: "Contact with me"),
-                          SizedBox(height: height/24.1,),
-                          middle_text_widget(text: "For any service and work you can contact with me by send an email or by my social media accounts."),
-                          SizedBox(height: height/32.1333,),
-                          Row(
-                            children: [
-                              Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
-                              SizedBox(width: width/93.6,),
-                              Icon(Icons.add,size: height/24.1,color: app_colors.main_color,),
-                              SizedBox(width:  width/93.6,),
-                              Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
-                              SizedBox(width:  width/93.6,),
-                              Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                    Container(
-
-                      width:  width/2.6742,
-                      child: Column(
-                        children: [
-                          TextFormField(
-                            style: TextStyle(
-                              color: app_colors.white_color,
-                            ),
-                            decoration: InputDecoration(
-                              border: OutlineInputBorder(
-                              ),
-                              hintText: "Name",
-                              fillColor: Color(0xff31313F),
-                              filled: true,
-                              focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
-                              enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
-                              hintStyle: TextStyle(color: app_colors.white_color),
-                            ),
-                          ),
-                          SizedBox(height: height/32.1333,),
-                          TextFormField(
-                            style: TextStyle(
-                              color: app_colors.white_color,
-                            ),
-                            decoration: InputDecoration(
-                              border: OutlineInputBorder(
-                              ),
-                              hintText: "E-mail",
-                              fillColor: Color(0xff31313F),
-                              filled: true,
-                              focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
-                              enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
-                              hintStyle: TextStyle(color: app_colors.white_color),
-                            ),
-                          ),
-                          SizedBox(height: height/32.1333,),
-                          TextFormField(
-                            style: TextStyle(
-                              color: app_colors.white_color,
-                            ),
-                            decoration: InputDecoration(
-                              border: OutlineInputBorder(
-                              ),
-                              hintText: "Subject",
-                              fillColor: Color(0xff31313F),
-                              filled: true,
-                              focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
-                              enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
-                              hintStyle: TextStyle(color: app_colors.white_color),
-                            ),
-                          ),
-                          SizedBox(height: height/32.1333,),
-                          TextFormField(
-                            decoration: InputDecoration(
-                                border: OutlineInputBorder(
-                                ),
-                                hintText: "Type a message here",
-                                fillColor: Color(0xff31313F),
-                                filled: true,
-                                focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
-                                enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
-                                hintStyle: TextStyle(color: app_colors.white_color),
-                            ),
-                            maxLines: 50,
-                            minLines: 5,
-                            style: TextStyle(
-                              color: app_colors.white_color,
-                            ),
-                          ),
-                          SizedBox(height: height/32.1333,),
-                          Container(
-                            width:  width/2.67428,
-                            height: height/19.28,
-                            decoration: BoxDecoration(
-                              color: app_colors.main_color,
-                              borderRadius: BorderRadius.circular(height/96.4)
-                            ),
-                            child: Center(child: middle_text_widget(text: "Send",)),
-                          )
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              // Container(
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //     crossAxisAlignment: CrossAxisAlignment.start,
+              //     children: [
+              //       Container(
+              //         child: Column(
+              //           crossAxisAlignment: CrossAxisAlignment.start,
+              //           children: [
+              //             heading_text_widget(text: "Contact with me"),
+              //             SizedBox(height: height/24.1,),
+              //             middle_text_widget(text: "For any service and work you can contact with me by send an email or by my social media accounts."),
+              //             SizedBox(height: height/32.1333,),
+              //             Row(
+              //               children: [
+              //                 Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
+              //                 SizedBox(width: width/93.6,),
+              //                 Icon(Icons.add,size: height/24.1,color: app_colors.main_color,),
+              //                 SizedBox(width:  width/93.6,),
+              //                 Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
+              //                 SizedBox(width:  width/93.6,),
+              //                 Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
+              //               ],
+              //             )
+              //           ],
+              //         ),
+              //       ),
+              //       Container(
+              //
+              //         width:  width/2.6742,
+              //         child: Column(
+              //           children: [
+              //             TextFormField(
+              //               style: TextStyle(
+              //                 color: app_colors.white_color,
+              //               ),
+              //               decoration: InputDecoration(
+              //                 border: OutlineInputBorder(
+              //                 ),
+              //                 hintText: "Name",
+              //                 fillColor: Color(0xff31313F),
+              //                 filled: true,
+              //                 focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
+              //                 enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
+              //                 hintStyle: TextStyle(color: app_colors.white_color),
+              //               ),
+              //             ),
+              //             SizedBox(height: height/32.1333,),
+              //             TextFormField(
+              //               style: TextStyle(
+              //                 color: app_colors.white_color,
+              //               ),
+              //               decoration: InputDecoration(
+              //                 border: OutlineInputBorder(
+              //                 ),
+              //                 hintText: "E-mail",
+              //                 fillColor: Color(0xff31313F),
+              //                 filled: true,
+              //                 focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
+              //                 enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
+              //                 hintStyle: TextStyle(color: app_colors.white_color),
+              //               ),
+              //             ),
+              //             SizedBox(height: height/32.1333,),
+              //             TextFormField(
+              //               style: TextStyle(
+              //                 color: app_colors.white_color,
+              //               ),
+              //               decoration: InputDecoration(
+              //                 border: OutlineInputBorder(
+              //                 ),
+              //                 hintText: "Subject",
+              //                 fillColor: Color(0xff31313F),
+              //                 filled: true,
+              //                 focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
+              //                 enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
+              //                 hintStyle: TextStyle(color: app_colors.white_color),
+              //               ),
+              //             ),
+              //             SizedBox(height: height/32.1333,),
+              //             TextFormField(
+              //               decoration: InputDecoration(
+              //                   border: OutlineInputBorder(
+              //                   ),
+              //                   hintText: "Type a message here",
+              //                   fillColor: Color(0xff31313F),
+              //                   filled: true,
+              //                   focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
+              //                   enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
+              //                   hintStyle: TextStyle(color: app_colors.white_color),
+              //               ),
+              //               maxLines: 50,
+              //               minLines: 5,
+              //               style: TextStyle(
+              //                 color: app_colors.white_color,
+              //               ),
+              //             ),
+              //             SizedBox(height: height/32.1333,),
+              //             Container(
+              //               width:  width/2.67428,
+              //               height: height/19.28,
+              //               decoration: BoxDecoration(
+              //                 color: app_colors.main_color,
+              //                 borderRadius: BorderRadius.circular(height/96.4)
+              //               ),
+              //               child: Center(child: middle_text_widget(text: "Send",)),
+              //             )
+              //           ],
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
               //contact section end
               //bottom section sart
+
+              Wrap(
+                alignment: WrapAlignment.spaceBetween,
+                children: [
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        heading_text_widget(text: "Contact with me"),
+                        SizedBox(height: height/24.1,),
+                        middle_text_widget(text: "For any service and work you can contact with me by send an email or by my social media accounts."),
+                        SizedBox(height: height/32.1333,),
+                        Row(
+                          children: [
+                            Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
+                            SizedBox(width: width/93.6,),
+                            Icon(Icons.add,size: height/24.1,color: app_colors.main_color,),
+                            SizedBox(width:  width/93.6,),
+                            Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
+                            SizedBox(width:  width/93.6,),
+                            Icon(Icons.facebook_outlined,size: height/24.1,color: app_colors.main_color,),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 20,height: 20,child: Text("this",style: TextStyle(color: Colors.red),),),
+                  Container(
+
+                    width:  width/2.6742,
+                    child: Column(
+                      children: [
+                        TextFormField(
+                          style: TextStyle(
+                            color: app_colors.white_color,
+                          ),
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                            ),
+                            hintText: "Name",
+                            fillColor: Color(0xff31313F),
+                            filled: true,
+                            focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
+                            enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
+                            hintStyle: TextStyle(color: app_colors.white_color),
+                          ),
+                        ),
+                        SizedBox(height: height/32.1333,),
+                        TextFormField(
+                          style: TextStyle(
+                            color: app_colors.white_color,
+                          ),
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                            ),
+                            hintText: "E-mail",
+                            fillColor: Color(0xff31313F),
+                            filled: true,
+                            focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
+                            enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
+                            hintStyle: TextStyle(color: app_colors.white_color),
+                          ),
+                        ),
+                        SizedBox(height: height/32.1333,),
+                        TextFormField(
+                          style: TextStyle(
+                            color: app_colors.white_color,
+                          ),
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                            ),
+                            hintText: "Subject",
+                            fillColor: Color(0xff31313F),
+                            filled: true,
+                            focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
+                            enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
+                            hintStyle: TextStyle(color: app_colors.white_color),
+                          ),
+                        ),
+                        SizedBox(height: height/32.1333,),
+                        TextFormField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                            ),
+                            hintText: "Type a message here",
+                            fillColor: Color(0xff31313F),
+                            filled: true,
+                            focusedBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.main_color),),
+                            enabledBorder: OutlineInputBorder(borderSide:BorderSide(color: app_colors.white_color),),
+                            hintStyle: TextStyle(color: app_colors.white_color),
+                          ),
+                          maxLines: 50,
+                          minLines: 5,
+                          style: TextStyle(
+                            color: app_colors.white_color,
+                          ),
+                        ),
+                        SizedBox(height: height/32.1333,),
+                        Container(
+                          width:  width/2.67428,
+                          height: height/19.28,
+                          decoration: BoxDecoration(
+                              color: app_colors.main_color,
+                              borderRadius: BorderRadius.circular(height/96.4)
+                          ),
+                          child: Center(child: middle_text_widget(text: "Send",)),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+
+
               SizedBox(height: height/9.64,),
           
             ],
